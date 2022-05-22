@@ -5,8 +5,10 @@
 Yum has a "undo" for the transactions.
 
 ```shell
-$ yum history list redhat-lsb
+yum history list redhat-lsb
+```
 
+```shell
 Loaded plugins: fastestmirror
 
 ID     | Command line             | Date and time    | Action(s)      | Altered
@@ -20,7 +22,9 @@ ID     | Command line             | Date and time    | Action(s)      | Altered
 
 ```shell
 $ yum history undo 31
+```
 
+```shell
 Loaded plugins: fastestmirror
 
 Undoing transaction 31, from Wed Nov  5 05:16:05 2014

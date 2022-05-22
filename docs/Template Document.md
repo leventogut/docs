@@ -108,8 +108,8 @@ tags:
 
         ````markdown
         ``` title=".gitignore"
-        \--8<-- ".gitignore"  # (3)
+        \--8<-- ".gitignore"  # (1)
         ```
         ````
 
-        3.  "\" is included so that the expression doesn't include the file.
+        1.  "\" is included so that the expression doesn't include the file.
