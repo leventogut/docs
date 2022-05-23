@@ -5,8 +5,11 @@ authors:
   - Levent Ogut
 tags:
   - httpd
+  - apache web server
+
+## Alias match
 ---
-```httpd
+```apache
 AliasMatch "^/guides/$" "/var/www/html/index.html"
 
 AliasMatch "^/guides/(.*)/$" "/var/www/html/guides/$1"
