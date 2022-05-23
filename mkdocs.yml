@@ -47,16 +47,8 @@ plugins:
       tags_file: "tags.md"
 extra:
   social:
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:levent@ogut.me
-    - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/leventogut
     - icon: fontawesome/brands/github 
-      link: https://github.com/leventogut
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/leventogut
-    - icon: fontawesome/brands/medium
-      link: "https://leventogut.medium.com/"
+      link: https://github.com/leventogut/docs
 markdown_extensions:
   - attr_list
   - abbr
@@ -75,11 +67,13 @@ markdown_extensions:
       custom_checkbox: True
   - pymdownx.tabbed:
       alternate_style: True 
+  - pymdownx.keys
   - meta
   - toc:
       permalink: "#"
       separator: "_"
       baselevel: 2
+  - pymdownx.critic
   - pymdownx.smartsymbols
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji

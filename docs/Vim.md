@@ -1,15 +1,13 @@
 ---
 title: Vim
 summary: Vim related
-authors:
-    - Levent Ogut
-date: 2022-05-21
 tags:
     - vim
     - editor
 ---
 ## Install Vundle Plugin Manager
-```
+
+```shell
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
@@ -70,7 +68,7 @@ colorscheme molokai
 ## Install CTAGS
 
 ```shell
-$ apt-get install -y exuberant-ctags 
+sudo apt-get install -y exuberant-ctags 
 ```
 
 ## Install plugins

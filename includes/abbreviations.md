@@ -3,3 +3,4 @@
 *[REF]: Reference
 *[VPA]: Vertical Pod Scaling
 *[YAML]: YAML Ain't Markup Language™
+*[CTAGS]: [CTAGS](https://ctags.io/)
