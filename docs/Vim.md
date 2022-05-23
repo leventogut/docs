@@ -73,7 +73,9 @@ sudo apt-get install -y exuberant-ctags
 
 ## Install plugins
 
-Run Vim, and then type ":PluginInstall" (without quotes). Alsom you can install from shell.
+Run Vim, and then type ":PluginInstall" (without quotes).
+
+Also you can install from shell.
 
 ```shell
 vim +PluginInstall +qall

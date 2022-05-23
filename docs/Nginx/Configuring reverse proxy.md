@@ -1,3 +1,11 @@
+---
+title: Configuring reverse proxy
+summary: Configuring reverse proxy
+authors:
+  - Levent Ogut
+tags:
+  - nginx
+---
 ```nginx
 upstream appA {
         server 127.0.0.1:3000;

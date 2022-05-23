@@ -11,7 +11,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.expand
+    # - navigation.expand
     - navigation.top
     - toc.follow
     - header.autohide
