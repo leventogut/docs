@@ -3,7 +3,6 @@ title: Container image clean up
 summary: Container image clean up
 authors:
     - Levent Ogut
-date: 2018-07-10
 tags:
     - container
     - docker

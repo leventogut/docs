@@ -1,9 +1,6 @@
 ---
 title: Introduction
-summary:
-authors:
-    - Levent Ogut
-date: 2018-07-10
+summary: Introduction
 ---
 ## Welcome to notes on cloud native tech stacks
 

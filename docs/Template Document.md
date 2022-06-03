@@ -3,7 +3,6 @@ title: A template document
 summary: Good place to start, copy and write away.
 authors:
     - Levent Ogut
-date: 2022-05-12-12:06
 tags:
     - template
     - document

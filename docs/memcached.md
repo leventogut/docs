@@ -3,7 +3,6 @@ title: Memcached tips
 summary: Memcached tips
 authors:
     - Levent Ogut
-date: 2022-05-22
 tags:
     - memcached
     - telnet

@@ -6,9 +6,9 @@ authors:
 tags:
   - httpd
   - apache web server
-
-## Alias match
 ---
+## Alias match
+
 ```apache
 AliasMatch "^/guides/$" "/var/www/html/index.html"
 
