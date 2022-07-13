@@ -13,7 +13,11 @@ tags:
 ## A sampler `.dockerignore` file
 
 ``` title=".dockerignore"
---8<--​ "../../includes/containers/.dockerignore/.dockerignore"
+--8<--​ "../../includes/containers/dockerignore/dockerignore"
+```
+
+``` title=".dockerignore2"
+--8<--​ "includes/containers/dockerignore/dockerignore"
 ```
 
 ## References & further reading
