@@ -10,15 +10,20 @@ tags:
     - best-practices
 ---
 
-## A sampler `.dockerignore` file
+## A sample `.dockerignore` file
 
-``` title=".dockerignore"
---8<--​ "../../includes/containers/dockerignore/dockerignore"
-```
+!!! examples
 
-``` title=".dockerignore2"
---8<--​ "includes/containers/dockerignore/dockerignore"
-```
+    === "General"
+
+        ``` title="General.dockerignore"
+        --8<-- "src/containers/dockerignore/General.dockerignore"
+        ```
+    === "Node.js"
+
+        ``` title="NodeJS.dockerignore"
+        --8<-- "src/containers/dockerignore/NodeJS.dockerignore"
+        ```
 
 ## References & further reading
 

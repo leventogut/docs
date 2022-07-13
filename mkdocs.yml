@@ -27,7 +27,7 @@ theme:
       scheme: default
       primary: deep orange
       toggle:
-        icon: material/toggle-switch 
+        icon: material/toggle-switch
         name: Switch to light mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -35,10 +35,10 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    
+
 plugins:
   - search:
-      lang: 
+      lang:
         - en
   - git-revision-date
   - git-revision-date-localized:
@@ -47,7 +47,7 @@ plugins:
       tags_file: "tags.md"
 extra:
   social:
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/leventogut/docs
 markdown_extensions:
   - attr_list
@@ -56,9 +56,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.snippets:
-      base_path: "."
       auto_append:
-      - "includes/abbreviations.md"
+        - "includes/abbreviations.md"
       check_paths: True
   - pymdownx.highlight:
       anchor_linenums: True
@@ -66,15 +65,15 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: True
   - pymdownx.tabbed:
-      alternate_style: True 
+      alternate_style: True
   - pymdownx.keys
   - meta
   - toc:
       permalink: "#"
-      separator: "_"
-      baselevel: 2
+      # separator: "_"
+      # baselevel: 2
   - pymdownx.critic
   - pymdownx.smartsymbols
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji
+      # emoji_index: !!python/name:materialx.emoji.twemoji
+      # emoji_generator: !!python/name:materialx.emoji.to_svg

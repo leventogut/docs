@@ -1,13 +1,7 @@
 #!/usr/bin/env groovy
-// TODO: SCM, differentiate between branches
 pipeline {
     agent { label "linux && docker" }
     environment {
-      // following environment values are expected to pass to the job.
-      // APPLICATION_NAME
-      // AWS_ACCOUNT_ID
-      // AWS_DEPLOY_USER_CREDENTIALS
-      // AWS_DEFAULT_REGION =
       AWS_ACCESS_KEY_ID = "${AWS_DEPLOY_USER_CREDENTIALS_USR}"
       AWS_SECRET_ACCESS_KEY = "${AWS_DEPLOY_USER_CREDENTIALS_PSW}"
       CONTAINER_REGISTERY = "${AWS_ACCOUNT_ID}"+".dkr.ecr."+"${AWS_DEFAULT_REGION}"+".amazonaws.com"
@@ -48,8 +42,8 @@ pipeline {
                         // https://www.jenkins.io/doc/pipeline/steps/ssh-steps/#sshscript-ssh-steps-sshscript-execute-scriptfile-on-remote-node
                         withCredentials([sshUserPrivateKey(credentialsId: 'deploy_user', keyFileVariable: 'identity', passphraseVariable: '', usernameVariable: 'userName')]) {
                             def server = [:]
-                            server.name = "driverfly-staging-server"
-                            server.host = "18.116.153.185"
+                            server.name = "staging-server"
+                            server.host = "x.x.x.x"
                             server.allowAnyHosts = true
                             server.user = userName
                             server.identityFile = identity
@@ -71,6 +65,11 @@ pipeline {
             slackSend(message: "${BUILD_URL}console", sendAsText: true)
         }
         success {
+            // updateGitlabCommitStatus name: 'build', state: 'success'
+            slackSend(message: "Build has run successfully.")
+            slackSend(message: "${BUILD_URL}console", sendAsText: true)
+        }
+        always {
             // updateGitlabCommitStatus name: 'build', state: 'success'
             slackSend(message: "Build has run successfully.")
             slackSend(message: "${BUILD_URL}console", sendAsText: true)
