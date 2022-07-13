@@ -1,0 +1,15 @@
+**/.git
+**/*.log
+**/*.swp
+**/*.md
+**/*.txt
+
+**/.env.example
+**/.env.local
+**/.editorconfig
+
+
+**/node_modules
+
+
+**/.vscode
