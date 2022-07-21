@@ -1,11 +1,12 @@
 ---
-title: CI/CD Jenkins pipeline example
+title: Jenkinsfile examples
 summary: CI/CD Jenkins pipeline example
 authors:
     - Levent Ogut
 tags:
     - Jenkins
     - Jenkinsfile
+    - pipeline
     - CI/CD
     - best-practices
 ---
@@ -25,7 +26,6 @@ tags:
         ```groovy title="Jenkinsfile Pipeline Example 2"
         --8<-- "src/ci-cd/pipeline.2.Jenkinsfile"
         ```
-
 
 ## References & further reading
 
