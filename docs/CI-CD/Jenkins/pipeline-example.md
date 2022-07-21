@@ -14,10 +14,16 @@ tags:
 
 !!! examples
 
-    === "Pipeline"
+    === "Pipeline 1"
 
-        ```groovy title="Jenkinsfile Pipeline Example"
-        --8<-- "src/ci-cd/Jenkinsfile"
+        ```groovy title="Jenkinsfile Pipeline Example 1"
+        --8<-- "src/ci-cd/pipeline.1.Jenkinsfile"
+        ```
+
+    === "Pipeline 2
+
+        ```groovy title="Jenkinsfile Pipeline Example 2"
+        --8<-- "src/ci-cd/pipeline.2.Jenkinsfile"
         ```
 
 ## References & further reading
